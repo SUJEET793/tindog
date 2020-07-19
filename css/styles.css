@@ -2,13 +2,9 @@ body
 {
   font-family: 'Montserrat-black'
 }
-#title{
-  background-color:#ff4c68;
-  color:#fff;
-}
-
 
 /* navigation bar style */
+
 
 .navbar{
   padding-bottom: 4.5rem;
@@ -28,13 +24,21 @@ body
 .container-fluid{
   padding :3% 15%;
 }
+/* title is styling  */
 
+#title{
+  background-color:#ff4c68;
+  color:#fff;
+
+
+}
 /* image phone is styled */
 .phone_image{
-  transform: rotate(20deg);
-  padding-top: 3%;
-  width: 60%
+  transform: rotate(25deg);
+  width: 60%;
+  position:relative;
 }
+
 h1{
   font-family: 'Montserrat-black';
   line-height: 1.5
@@ -48,7 +52,11 @@ h1{
 
 /* feature part styling */
 #feature{
-padding:7% 15%;
+  background-color: #fff;
+  text-align: center;
+  padding:7% 15%;
+  position:relative;
+
 }
 .feature_list{
   text-align: center;
@@ -69,4 +77,81 @@ p{
 /* changing the color of icon when howring throught it  */
 .icon:hover{
   color: #e7305b
+}
+
+/* testimonials section styleing  */
+
+#testimonials{
+padding: 7% 15%;
+text-align: center;
+background-color:#e8505b;
+color:#fff;
+padding-bottom: 0px;
+
+}
+h2{
+  font-family:'Montserrat';
+  line-height: 1.5;
+  font-size: 2rem;
+  font-weight: bold;
+}
+.testimonial-image{
+  width: 10%;
+  border-radius: 100%;
+  margin: 20px;
+}
+
+
+/* press section styling  */
+
+#press{
+  padding: 7% 15%;
+  text-align: center;
+  background-color:#e8505b;
+  color:#fff;
+  padding-top: 0px;
+}
+.press-mage{
+  width: 15%;
+  margin: 20px;
+}
+
+/* pricing styling  */
+#pricing{
+padding: 100px;
+text-align: center;
+}
+.pricing-col{
+  padding: 3% 2%;
+}
+  /* Call to Action*/
+  #cta{
+  background-color:#ff4c68;
+  color:#fff;
+  text-align: center;
+  padding: 7% 15%;
+
+}
+h3{
+  font-weight: 'Montserrat black'
+  font-style: bold;
+}
+/*  id Footer section */
+#footer{
+  text-align: center;
+}
+.footer-icon{
+  padding: 2px;
+}
+
+/* adiing the media break pont in the code when the size of the screen is less than the 991px  */
+
+@media only screen and (max-width: 991px) {
+  .phone_image {
+    position: static;
+    transform:rotate(0);
+  }
+  #title{
+    text-align: center;
+  }
 }
